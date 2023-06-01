@@ -1,7 +1,7 @@
 # <p align = "center"> FACE SHAPE AND HAIR STYLE MATCHING SYSTEM </p>
 
 
-## PROBLEM STATEMENT
+## <br><br><br><br>PROBLEM STATEMENT
 The problem at hand is to develop a hairstyle recommendation system based on face shape detection. The objective is to create an automated solution that can analyze the user's face shape and suggest suitable hairstyles that complement their unique features.
 
 The primary challenge is to accurately detect and classify the user's face shape using computer vision techniques. Face shape detection involves analyzing facial landmarks, such as the position of the eyes, nose, and mouth, and determining the overall structure of the face. Once the face shape is identified, the system needs to provide personalized hairstyle recommendations that enhance the user's natural features, taking into account factors such as hair texture, length, and thickness.
@@ -366,7 +366,6 @@ def calculate_ratios(facelength, cheekbone, forehead, jawlength, chinlength):
 
     return cheekbone_ratio, jawline_ratio, forehead_ratio, chin_ratio
 
-
 def determine_face_shape(cheekbone_ratio, jawline_ratio, forehead_ratio, chin_ratio):
     if forehead_ratio > 0.27:
         if chin_ratio < 0.18:
@@ -410,7 +409,6 @@ def determine_face_shape(cheekbone_ratio, jawline_ratio, forehead_ratio, chin_ra
 
 cheekbone_ratio, jawline_ratio, forehead_ratio, chin_ratio = calculate_ratios(facelength, cheekbone, forehead, jawlength, chinlength)
 
-
 face_shape = determine_face_shape(cheekbone_ratio, jawline_ratio, forehead_ratio, chin_ratio)
 print("Face shape:", face_shape)
 
@@ -446,7 +444,7 @@ def suggest_hairstyle(face_shape):
             "avoid": ["Very long, straight hair", "High ponytails"]
         }
     }
-
+    
     # Check if the given face shape is in the dictionary
     if face_shape in hairstyles:
         suggestion = hairstyles[face_shape]["suggestions"]
@@ -455,8 +453,7 @@ def suggest_hairstyle(face_shape):
 
     # If the face shape is not recognized
     return "Sorry, we don't have specific hairstyle recommendations for that face shape."
-
-
+    
 hairstyle_suggestion = suggest_hairstyle(face_shape)
 print(hairstyle_suggestion)
 
@@ -478,21 +475,22 @@ print(hairstyle_suggestion)
 ![Screenshot 2023-06-01 104416](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/65e47ebb-2f15-4f2f-8f8b-cf48ba7acbd2)
 
 
-### FACE LENGTH:
+### <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>FACE LENGTH:
 ![Screenshot 2023-06-01 104431](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/98232274-c2c8-40ae-8125-2d30259d2c72)
+### <br><br><br><br><br><br><br><br><br><br>FOREHEAD DISTANCE:
 
-### FOREHEAD DISTANCE:
-![Screenshot 2023-06-01 104501](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/834eb983-4c10-4007-8fb9-776087f70e14)
-![Screenshot 2023-06-01 104514](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/acc35f60-897b-4e15-ad12-c43cf51e1266)
+![Screenshot 2023-06-01 120306](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/c15e08cd-60e8-4968-8d6e-f4b867dca38f)
 
 
-### JAWLINE DISTANCE:
+### <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>JAWLINE DISTANCE:
+<br><br>
 ![Screenshot 2023-06-01 104531](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/a120199d-d142-4a67-bd9d-d92dd94552ba)
 
-### CHIN DISTANCE:
+### <br><br><br><br><br><br><br>CHIN DISTANCE:
+<br><br>
 ![Screenshot 2023-06-01 104545](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/0c72b319-47b7-472f-80f9-c2b71a2e8030)
 
-### CHEEK BONE DISTANCE:
+### <br><br><br><br><br><br><br><br><br><br><br>CHEEK BONE DISTANCE:
 ![Screenshot 2023-06-01 104600](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/bebe5bbe-0475-4f11-a19a-08f9d674f000)
 
 ### FACE SHAPE DETECTION:
@@ -503,7 +501,7 @@ print(hairstyle_suggestion)
 ![Screenshot 2023-06-01 104636](https://github.com/Dineshkumar200/MINIPROJECT/assets/75235789/4f422f03-3c7c-4baf-9a95-35883b4d6776)
 
 
-## CONCLUSION:
+## <br><br><br><br>CONCLUSION:
 
 Facial shape detection and analysis for hairstyle recommendation systems holds great potential for providing personalized and accurate hairstyle recommendations to users.
 By utilizing computer vision and machine learning techniques, facial landmarks and geometric features can be extracted to accurately analyze the user's facial shape. 
